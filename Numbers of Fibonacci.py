@@ -1,15 +1,15 @@
 # Вивести числа Фібоначі включно до введеного числа n, використовуючи цикли. 
 # (Послідовність чисел Фібоначі 0, 1, 1, 2, 3, 5, 8, 13 і т.д.)
 
-num = int(input('Введіть число:'))
+num = 0
+while not(num >2):
+    num = int(input('Введіть число:'))
+fib = [0, 1]
 i = 0
-fib = list(range(num))
-while i <= num:    
-    i += 1        
-    if i == 1:        
-        fib[i-1] = 0        
-        
-        continue            
-    fib[i-1] += fib[i-1]    
+
+while i <= num-2:
+    i += 1                    
+    fib.append(0)
+    fib[-1] = fib[-2] + fib[-3]
     
 print(fib)
