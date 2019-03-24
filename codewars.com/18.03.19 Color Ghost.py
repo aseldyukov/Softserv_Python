@@ -6,10 +6,9 @@
 
 import random
 
-class Ghost(object):
+class Ghost:
     def __init__ (self):
         self.color = random.choice(["white", "yellow", "purple", "red"])
     
-c = Ghost()
-print(c.color)
-
+ghost = Ghost()
+print(ghost.color)

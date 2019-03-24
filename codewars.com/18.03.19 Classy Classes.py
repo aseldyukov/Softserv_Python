@@ -1,12 +1,13 @@
-# Sort My Textbooks
+# Classy Classes
+# Your task is to complete this Class, 
+# the Person class has been created. 
+# You must fill in the Constructor method to accept a name as string and an age as number, 
+# complete the get Info property and getInfo method/Info getter which should return
 
-# HELP! Jason can't find his textbook! 
-# It is two days before the test date, 
-# and Jason's textbooks are all out of order! 
-# Help him sort a list (ArrayList in java) 
-# full of textbooks by subject, so he can study before the test.
-
-# The sorting should NOT be case sensitive
-
-def sorter(textbooks):
-    return sorted(textbooks, key = lambda x: x.lower())
+class Person:    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.info = self.name + "s age is " + str(self.age)
+    def getInfo(self):        
+        return self.info
